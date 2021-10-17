@@ -19,7 +19,15 @@
 
 ## 任务二
 
+调用算法生成迷宫
 
+在Screen respondToUserInput(KeyEvent key)中进行响应
+
+通过search方法完成每一步的自动寻路
+
+Stack<Pair<Integer,Integer>> st 用来回溯
+
+有一些问题存在同时使用自动寻路和方向键指挥时
 
 
 
