@@ -6,3 +6,20 @@
 
 3. Comparable< T > 是一个接口, 泛型参数<T extends Comparable< T >> 限定了边界是Comparable< T >， 意味着类型参数必须支持通过 Comparable 接口进行比较。BubbleSorter 实现 Sorter 接口， <T extends Comparable< T >> 在 Bubble中界定无需重新界定。
 
+二维数组monsters的转化，主要是重载了sort函数
+
+    @Override
+    public void load(T[][] a, Factory<T> factory){
+        this.a = factory.create(a.length * a[0].length);
+        for (int i = 0; i < a.length * a[0].length; ++i)
+            this.a[i] = a[i / a[0].length][i % a[0].length];
+    }
+
+通过一个工厂create对象
+
+## 任务二
+
+
+
+
+
